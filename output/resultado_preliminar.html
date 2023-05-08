@@ -2,7 +2,6 @@
 table {
   border-collapse: collapse;
 }
-
 table, th, td {
   border: 1px solid black;
   text-align: center;
@@ -14,7 +13,17 @@ th {
 body {
   font-family: Arial, sans-serif;
 }
-thead { display: table-header-group; }
+thead { 
+  display: table-header-group; 
+}
+@media print {
+  tr {
+    page-break-inside: avoid;
+  }
+}
+@page {
+  size: A3;
+}
 </style>
 <h4><center>Resultado Preliminar - Tecnologia e Informação<br>Secretaria de Estado de Fazenda de Minas Gerais</center></h4>
 Critérios de desempate:<br>
@@ -24,9 +33,9 @@ c) obtiver maior nota na Prova Escrita Objetiva II;<br>
 d) obtiver maior número de acertos em Ciência de Dados;<br>
 e) obtiver maior número de acertos em Desenvolvimento de Sistemas;<br>
 f) obtiver maior número de acertos em Banco de Dados;<br>
-g) tiver exercido a função de jurado, nos termos do art. 440 do Código de Processo Penal;<br>
+g) tiver exercido a função de jurado, nos termos do art. 440 do Código de Processo Penal (não considerado nesta classificação);<br>
 h) persistindo o empate, observar-se-á o critério de maior idade.
-<table> 
+<table style="margin-top: 10px;">
   <colgroup>
     <col style="width: 7%;">
     <col style="width: 7%;">
